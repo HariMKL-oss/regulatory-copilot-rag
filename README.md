@@ -13,21 +13,21 @@ A production-grade, enterprise Generative AI Retrieval-Augmented Generation (RAG
 
 ```mermaid
 flowchart TD
-    User([User Query + Role Header]) --> A[Security Guardrail Layer]
-    A -->|1. Prompt Injection Scanner| B{Is Safe?}
-    B -->|No| C[🚨 Block & Alert]
-    B -->|Yes| D[2. PII Redaction Engine]
+    User["User Query + Role Header"] --> A["Security Guardrail Layer"]
+    A -->|"1. Prompt Injection Scanner"| B{"Is Safe?"}
+    B -->|"No"| C["Block and Alert Security"]
+    B -->|"Yes"| D["2. PII Redaction Engine"]
     
-    D --> E[Zero-Trust RBAC Pre-Filter]
-    E --> F[Hybrid Search Engine: BM25 + Dense TF-IDF/Vectors]
-    F --> G[Reciprocal Rank Fusion RRF]
+    D --> E["Zero-Trust RBAC Pre-Filter"]
+    E --> F["Hybrid Search: BM25 + Dense Vectors"]
+    F --> G["Reciprocal Rank Fusion RRF"]
     
-    G --> H{Relevance >= Threshold?}
-    H -->|No| I[⚠️ Polite Refusal / Out-of-Scope]
-    H -->|Yes| J[Citation-Grounded Generator]
+    G --> H{"Relevance >= Threshold?"}
+    H -->|"No"| I["Polite Refusal (Out-of-Scope)"]
+    H -->|"Yes"| J["Citation-Grounded Generator"]
     
-    J --> K[Claim-Level Citation Verification]
-    K --> L[Verified Answer + Citation Tags]
+    J --> K["Claim-Level Citation Verification"]
+    K --> L["Verified Answer + Citation Tags"]
 ```
 
 ---
