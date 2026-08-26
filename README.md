@@ -1,6 +1,6 @@
 # 📜 Enterprise Regulatory & Compliance RAG Copilot
 
-[![CI Pipeline](https://github.com/your-username/regulatory-copilot-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/regulatory-copilot-rag/actions)
+[![CI Pipeline](https://github.com/HariMKL-oss/regulatory-copilot-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/HariMKL-oss/regulatory-copilot-rag/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Security: RBAC Protected](https://img.shields.io/badge/Security-Zero--Trust%20RBAC-green.svg)](MODEL_CARD.md)
@@ -49,7 +49,7 @@ flowchart TD
 
 ### 1. Installation
 ```bash
-git clone https://github.com/your-username/regulatory-copilot-rag.git
+git clone https://github.com/HariMKL-oss/regulatory-copilot-rag.git
 cd regulatory-copilot-rag
 pip install -r requirements.txt
 ```
