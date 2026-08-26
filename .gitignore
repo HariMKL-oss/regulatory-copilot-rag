@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.parquet
+*.joblib
+*.log
+.DS_Store
+.env
+venv/
+.venv/
