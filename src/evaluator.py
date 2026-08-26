@@ -115,7 +115,10 @@ def run_rag_benchmark(eval_path: str = "data/eval_questions.json", reg_dir: str 
 
 
 if __name__ == "__main__":
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    e_path = os.path.join(base_dir, "data", "eval_questions.json")
+    r_dir = os.path.join(base_dir, "data", "sample_regulations")
     run_rag_benchmark(
-        eval_path="d:/Hari/banking-ai-portfolio/project-3-regulatory-copilot-rag/data/eval_questions.json",
-        reg_dir="d:/Hari/banking-ai-portfolio/project-3-regulatory-copilot-rag/data/sample_regulations"
+        eval_path=e_path,
+        reg_dir=r_dir
     )

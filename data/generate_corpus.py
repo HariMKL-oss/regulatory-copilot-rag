@@ -153,4 +153,5 @@ def generate_eval_benchmark(output_path: str = "data/eval_questions.json"):
     return benchmark_cases
 
 if __name__ == "__main__":
-    generate_eval_benchmark("d:/Hari/banking-ai-portfolio/project-3-regulatory-copilot-rag/data/eval_questions.json")
+    out = os.path.join(os.path.dirname(__file__), "eval_questions.json")
+    generate_eval_benchmark(out)
